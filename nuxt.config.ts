@@ -9,5 +9,9 @@ export default defineNuxtConfig({
     }
   },
   ssr: true,
-  compatibilityDate: '2025-09-19'
+  compatibilityDate: '2025-09-19',
+  alias: {
+    '~': '.',
+    '@': '.'
+  }
 })

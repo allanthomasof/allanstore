@@ -8,10 +8,10 @@ export const useNavigation = () => {
 
   /**
    * Navega para a página de detalhes do produto
-   * @param {number|string} productId - ID do produto
+   * @param {string} productSlug - Slug do produto
    */
-  const navigateToProduct = (productId) => {
-    router.push(`/produto/${productId}`)
+  const navigateToProduct = (productSlug) => {
+    router.push(`/produto/${productSlug}`)
   }
 
   /**
