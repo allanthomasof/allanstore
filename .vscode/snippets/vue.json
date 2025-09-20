@@ -1,0 +1,127 @@
+{
+  "Vue Component Template": {
+    "prefix": "vue-template",
+    "body": [
+      "<template>",
+      "  <div>",
+      "    $1",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup>",
+      "// $2",
+      "</script>",
+      "",
+      "<style scoped>",
+      "/* $3 */",
+      "</style>"
+    ],
+    "description": "Template básico de componente Vue"
+  },
+  "Vue Composition API": {
+    "prefix": "vue-composition",
+    "body": [
+      "<script setup>",
+      "import { ref, computed, onMounted } from 'vue'",
+      "",
+      "// $1",
+      "</script>"
+    ],
+    "description": "Script setup com Composition API"
+  },
+  "Vue Reactive Data": {
+    "prefix": "vue-ref",
+    "body": [
+      "const ${1:variableName} = ref(${2:initialValue})"
+    ],
+    "description": "Criar variável reativa com ref"
+  },
+  "Vue Computed": {
+    "prefix": "vue-computed",
+    "body": [
+      "const ${1:computedName} = computed(() => {",
+      "  return ${2:expression}",
+      "})"
+    ],
+    "description": "Criar computed property"
+  },
+  "Vue Watch": {
+    "prefix": "vue-watch",
+    "body": [
+      "watch(${1:source}, (${2:newValue}, ${3:oldValue}) => {",
+      "  ${4:// side effect}",
+      "})"
+    ],
+    "description": "Criar watcher"
+  },
+  "Vue Lifecycle onMounted": {
+    "prefix": "vue-mounted",
+    "body": [
+      "onMounted(() => {",
+      "  ${1:// mounted logic}",
+      "})"
+    ],
+    "description": "Lifecycle hook onMounted"
+  },
+  "Vue Lifecycle onUnmounted": {
+    "prefix": "vue-unmounted",
+    "body": [
+      "onUnmounted(() => {",
+      "  ${1:// cleanup logic}",
+      "})"
+    ],
+    "description": "Lifecycle hook onUnmounted"
+  },
+  "Vue Props": {
+    "prefix": "vue-props",
+    "body": [
+      "const props = defineProps({",
+      "  ${1:propName}: {",
+      "    type: ${2:String},",
+      "    required: ${3:true},",
+      "    default: ${4:undefined}",
+      "  }",
+      "})"
+    ],
+    "description": "Definir props do componente"
+  },
+  "Vue Emits": {
+    "prefix": "vue-emits",
+    "body": [
+      "const emit = defineEmits(['${1:eventName}'])"
+    ],
+    "description": "Definir emits do componente"
+  },
+  "Vue Router Navigation": {
+    "prefix": "vue-router",
+    "body": [
+      "const router = useRouter()",
+      "const route = useRoute()",
+      "",
+      "const navigateTo = (path) => {",
+      "  router.push(path)",
+      "}"
+    ],
+    "description": "Navegação com Vue Router"
+  },
+  "Vue Nuxt Composable": {
+    "prefix": "vue-composable",
+    "body": [
+      "export const use${1:ComposableName} = () => {",
+      "  // $2",
+      "  ",
+      "  return {",
+      "    ${3:returnValue}",
+      "  }",
+      "}"
+    ],
+    "description": "Criar composable do Nuxt"
+  },
+  "Vue Tailwind Classes": {
+    "prefix": "vue-tw",
+    "body": [
+      "class=\"${1:tailwind-classes}\""
+    ],
+    "description": "Adicionar classes do Tailwind"
+  }
+}
